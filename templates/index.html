@@ -15,7 +15,7 @@
         <h1 class="text-primary text-center mb-4">ChatSleuth</h1>
         <form id="searchForm" onsubmit="search(event)">
             <div class="input-group">
-                <input type="text" id="queryInput" class="form-control" placeholder="Enter a word to search e.g., deepali">
+                <input type="text" id="queryInput" class="form-control" placeholder="Enter a word to search e.g., deepali" onkeyup="search(event)">
                 <button class="btn btn-success" onclick="search(event)">SEARCH</button>
 
             </div>
