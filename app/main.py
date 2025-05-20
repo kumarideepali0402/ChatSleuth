@@ -47,6 +47,7 @@ import nltk
 from utils.text_preprocessing import text_preprocess
 from core.index_builder import inverted_index_builder
 from core.query_handler import word_search
+from core.highlight import highlight_matches
 
 # Ensure NLTK data is available
 try:
@@ -75,7 +76,7 @@ def search():
     if not query.strip():
         return jsonify({"results": []})
     line_indexes = word_search(query, inverted_index)
-    results = [raw_messages[i].strip() for i in sorted(line_indexes)]
+    results = [highlight_matches(raw_messages[i].strip(), query) for i in sorted(line_indexes)]
     return jsonify({"results": results})
 
 if __name__ == "__main__":

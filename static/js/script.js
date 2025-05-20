@@ -1,6 +1,5 @@
-function escapeRegExp(string){
-    return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-}
+
+
 async function search(event) {
     event.preventDefault()
 
@@ -22,15 +21,15 @@ async function search(event) {
 
     const data = await response.json();
 
+
+
     if(data.results.length == 0){
         resultDiv.innerHTML="<div class ='text-danger'>No result found.</div>"
     }
     else{
-        // resultDiv.innerHTML = data.results.map(msg => `<div class="mb-2">${msg} </div>`).join("")
-        const regex = new RegExp(`(${escapeRegExp(query)})`, "gi")
         resultDiv.innerHTML = data.results
-                         .map(msg => `<div class="chat-bubble mb-2 p-2">${msg.replace(regex, `<mark>$1</mark>`)} </div>`)
-                         .join("")
+            .map(msg => `<div class="chat-bubble mb-2 p-2">${msg}</div>`)
+            .join("");
     }
 
 
