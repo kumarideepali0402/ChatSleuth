@@ -57,7 +57,9 @@ except LookupError:
     nltk.download('punkt')
     nltk.download('stopwords')
 
-app = Flask(__name__, static_folder="../static", template_folder="../templates")
+app = Flask(__name__, static_folder=os.path.join(os.path.dirname(__file__), '..', 'static'),
+            template_folder=os.path.join(os.path.dirname(__file__), '..', 'templates'))
+
 
 with open("data/chat_history.txt", "r", encoding="utf-8", errors="ignore") as file:
     raw_messages = file.readlines()
