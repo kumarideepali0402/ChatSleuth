@@ -43,7 +43,7 @@ def highlight_matches(text : str, pattern : str) -> str:
     
     for start in reversed(starting_indices) :
         chars.insert(start+ len(lower_pattern),"</mark>")
-        chars.insert(start,'<mark style="background-color: orange; color: black;">')
+        chars.insert(start,'<mark style=" color: black;">')
     
     return ''.join(chars)
 
