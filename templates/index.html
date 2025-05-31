@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- Bootstrap 5 CDN -->
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
 
@@ -25,8 +25,450 @@
     </div>
     <script src="{{url_for('static',filename='js/script.js')}}"></script>
 
-    <!-- Bootstrap JS Bundle -->
+  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatSleuth - Smart Search</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --accent-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --dark-gradient: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            --glass-bg: rgba(255, 255, 255, 0.1);
+            --glass-border: rgba(255, 255, 255, 0.2);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--primary-gradient);
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Animated background particles */
+        .bg-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .particle {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .particle:nth-child(1) { width: 80px; height: 80px; left: 10%; animation-delay: 0s; }
+        .particle:nth-child(2) { width: 120px; height: 120px; left: 70%; animation-delay: 2s; }
+        .particle:nth-child(3) { width: 60px; height: 60px; left: 40%; animation-delay: 4s; }
+        .particle:nth-child(4) { width: 100px; height: 100px; left: 80%; animation-delay: 1s; }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+
+        /* Glass morphism container */
+        .glass-container {
+            backdrop-filter: blur(20px);
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .glass-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Header styling */
+        .app-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .app-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            background: linear-gradient(45deg, #fff, #f8f9fa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin-bottom: 0.5rem;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from { filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.3)); }
+            to { filter: drop-shadow(0 0 30px rgba(255, 255, 255, 0.6)); }
+        }
+
+        .app-subtitle {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        /* Search form styling */
+        .search-container {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .search-input-group {
+            position: relative;
+            overflow: hidden;
+            border-radius: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .search-input-group:focus-within {
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: scale(1.02);
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+        }
+
+        .search-input {
+            background: transparent;
+            border: none;
+            padding: 1rem 1.5rem;
+            font-size: 1.1rem;
+            color: white;
+            width: 100%;
+            outline: none;
+        }
+
+        .search-input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .search-btn {
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: var(--accent-gradient);
+            border: none;
+            border-radius: 50px;
+            padding: 0.8rem 1.5rem;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .search-btn:hover {
+            transform: translateY(-50%) scale(1.05);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .search-btn:active {
+            transform: translateY(-50%) scale(0.98);
+        }
+
+        /* Loading animation */
+        .loading-spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Results styling */
+        .results-container {
+            margin-top: 2rem;
+        }
+
+        .result-item {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            color: white;
+            transition: all 0.3s ease;
+            animation: slideIn 0.5s ease-out;
+        }
+
+        .result-item:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateX(10px);
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Status messages */
+        .status-message {
+            text-align: center;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-top: 2rem;
+            font-size: 1.1rem;
+            font-weight: 500;
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .status-error {
+            background: rgba(220, 53, 69, 0.2);
+            border: 1px solid rgba(220, 53, 69, 0.5);
+            color: #ff6b6b;
+        }
+
+        .status-info {
+            background: rgba(13, 202, 240, 0.2);
+            border: 1px solid rgba(13, 202, 240, 0.5);
+            color: #4dd0e1;
+        }
+
+        .status-warning {
+            background: rgba(255, 193, 7, 0.2);
+            border: 1px solid rgba(255, 193, 7, 0.5);
+            color: #ffeb3b;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .app-title {
+                font-size: 2.5rem;
+            }
+            
+            .glass-container {
+                margin: 1rem;
+                padding: 1.5rem;
+            }
+            
+            .search-input {
+                font-size: 1rem;
+                padding: 0.8rem 1rem;
+            }
+            
+            .search-btn {
+                padding: 0.6rem 1rem;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Focus accessibility */
+        .search-input:focus,
+        .search-btn:focus {
+            outline: 2px solid rgba(255, 255, 255, 0.5);
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Animated background -->
+    <div class="bg-animation">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center align-items-center min-vh-100">
+            <div class="col-11 col-md-8 col-lg-6">
+                <div class="glass-container">
+                    <!-- Header -->
+                    <div class="app-header">
+                        <h1 class="app-title">
+                            <i class="fas fa-search me-3"></i>ChatSleuth
+                        </h1>
+                        <p class="app-subtitle">Intelligent Search at Your Fingertips</p>
+                    </div>
+
+                    <!-- Search Form -->
+                    <form id="searchForm" class="search-container">
+                        <div class="search-input-group">
+                            <input 
+                                type="text" 
+                                id="queryInput" 
+                                class="search-input" 
+                                placeholder="Enter your search query...for e.g.'deep'"
+                                autocomplete="off"
+                                autofocus
+                            >
+                            <button type="submit" class="search-btn" id="searchBtn">
+                                <i class="fas fa-search me-2"></i>Search
+                            </button>
+                        </div>
+                    </form>
+
+                    <!-- Results Container -->
+                    <div id="result" class="results-container"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let isSearching = false;
+
+        async function search(event) {
+            event.preventDefault();
+            
+            if (isSearching) return; // Prevent multiple simultaneous searches
+            
+            const query = document.querySelector("#queryInput").value.trim();
+            const resultDiv = document.querySelector("#result");
+            const searchBtn = document.querySelector("#searchBtn");
+            
+            if (!query) {
+                showMessage(resultDiv, 'Please enter a search query', 'error');
+                return;
+            }
+            
+            // Start loading state
+            isSearching = true;
+            searchBtn.innerHTML = '<span class="loading-spinner me-2"></span>Searching...';
+            searchBtn.disabled = true;
+            showMessage(resultDiv, 'Searching for results...', 'info');
+            
+            try {
+                const response = await fetch('/search', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ query })
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const data = await response.json();
+                
+                if (data.results && data.results.length === 0) {
+                    showMessage(resultDiv, 'No results found for your query. Try different keywords.', 'warning');
+                } else if (data.results && data.results.length > 0) {
+                    displayResults(resultDiv, data.results);
+                } else {
+                    showMessage(resultDiv, 'Unexpected response format', 'error');
+                }
+                
+            } catch (error) {
+                console.error('Search error:', error);
+                showMessage(resultDiv, 'Search service temporarily unavailable. Please try again later.', 'error');
+            } finally {
+                // Reset loading state
+                isSearching = false;
+                searchBtn.innerHTML = '<i class="fas fa-search me-2"></i>Search';
+                searchBtn.disabled = false;
+            }
+        }
+        
+        function showMessage(container, message, type) {
+            const statusClass = `status-${type}`;
+            const iconClass = type === 'error' ? 'fas fa-exclamation-triangle' : 
+                            type === 'warning' ? 'fas fa-exclamation-circle' : 
+                            'fas fa-info-circle';
+            
+            container.innerHTML = `
+                <div class="status-message ${statusClass}">
+                    <i class="${iconClass} me-2"></i>${message}
+                </div>
+            `;
+        }
+        
+        function displayResults(container, results) {
+            const resultsHtml = results
+                .map((result, index) => `
+                    <div class="result-item" style="animation-delay: ${index * 0.1}s">
+                        <i class="fas fa-comment-dots me-2"></i>${result}
+                    </div>
+                `)
+                .join('');
+                
+            container.innerHTML = `
+                <div class="results-header mb-3">
+                    <h5 style="color: rgba(255, 255, 255, 0.9);">
+                        <i class="fas fa-list-ul me-2"></i>Found ${results.length} result${results.length !== 1 ? 's' : ''}
+                    </h5>
+                </div>
+                ${resultsHtml}
+            `;
+        }
+        
+        // Event listeners
+        document.getElementById('searchForm').addEventListener('submit', search);
+        
+        // Real-time search on keyup (with debounce)
+        let searchTimeout;
+        document.getElementById('queryInput').addEventListener('keyup', function(event) {
+            if (event.key === 'Enter') {
+                search(event);
+                return;
+            }
+            
+            // Optional: Uncomment for real-time search
+            /*
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(() => {
+                if (this.value.trim()) {
+                    search(event);
+                }
+            }, 500);
+            */
+        });
+        
+        // Clear results when input is empty
+        document.getElementById('queryInput').addEventListener('input', function() {
+            if (!this.value.trim()) {
+                document.getElementById('result').innerHTML = '';
+            }
+        });
+    </script>
 </body>
 </html>
