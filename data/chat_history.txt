@@ -1,0 +1,503 @@
+Alice : Python is such a cool language.
+Bob : I'm going to the library.
+Alice : I'm going to the library.
+Frank : I'm going to the library.
+Deepali : Did you complete the assignment?
+Bob : I'm almost done with my task.
+Alice : Let's start the group discussion now.
+Bob : I'm almost done with my task.
+Bob : I need help with my code.
+Hannah : I'm going to the library.
+Hannah : I'm going to the library.
+Hannah : Python is such a cool language.
+Deepali : I need help with my code.
+Bob : Let's start the group discussion now.
+Bob : Can we meet tomorrow?
+Alice : I need help with my code.
+Bob : Hey, how are you?
+Eve : Python is such a cool language.
+Hannah : This is so confusing!
+Frank : That project was quite interesting.
+Grace : Let�s catch up later!
+Charlie : This is so confusing!
+Bob : I need help with my code.
+Charlie : Hey, how are you?
+Bob : I'm almost done with my task.
+Grace : Can we meet tomorrow?
+Alice : Did you complete the assignment?
+Hannah : Hey, how are you?
+Eve : What's the plan for tonight?
+Grace : I need help with my code.
+Deepali : That project was quite interesting.
+Charlie : Can we meet tomorrow?
+Charlie : Python is such a cool language.
+Bob : Let's start the group discussion now.
+Grace : I'm going to the library.
+Deepali : That project was quite interesting.
+Charlie : Let�s catch up later!
+Grace : Python is such a cool language.
+Frank : This is so confusing!
+Eve : Python is such a cool language.
+Alice : Python is such a cool language.
+Deepali : Let's start the group discussion now.
+Grace : Can we meet tomorrow?
+Hannah : Can we meet tomorrow?
+Charlie : Let's start the group discussion now.
+Eve : I need help with my code.
+Charlie : Python is such a cool language.
+Grace : Python is such a cool language.
+Deepali : What's the plan for tonight?
+Alice : I'm going to the library.
+Eve : I need help with my code.
+Grace : Let�s catch up later!
+Eve : Let�s catch up later!
+Frank : I'm going to the library.
+Eve : Did you complete the assignment?
+Charlie : That project was quite interesting.
+Deepali : Let's start the group discussion now.
+Charlie : This is so confusing!
+Hannah : This is so confusing!
+Bob : That project was quite interesting.
+Alice : Can we meet tomorrow?
+Deepali : Can we meet tomorrow?
+Eve : I need help with my code.
+Eve : Python is such a cool language.
+Charlie : Let�s catch up later!
+Hannah : Can we meet tomorrow?
+Deepali : Let�s catch up later!
+Deepali : This is so confusing!
+Grace : I need help with my code.
+Alice : Can we meet tomorrow?
+Deepali : Let�s catch up later!
+Eve : What's the plan for tonight?
+Charlie : Can we meet tomorrow?
+Deepali : Let�s catch up later!
+Bob : This is so confusing!
+Charlie : I'm going to the library.
+Eve : Python is such a cool language.
+Bob : Can we meet tomorrow?
+Charlie : Did you complete the assignment?
+Alice : Can we meet tomorrow?
+Bob : Did you complete the assignment?
+Alice : Let�s catch up later!
+Eve : Let's start the group discussion now.
+Bob : I'm going to the library.
+Charlie : I'm going to the library.
+Charlie : Did you complete the assignment?
+Grace : That project was quite interesting.
+Hannah : This is so confusing!
+Bob : Hey, how are you?
+Grace : Can we meet tomorrow?
+Grace : I'm almost done with my task.
+Frank : That project was quite interesting.
+Deepali : Did you complete the assignment?
+Alice : Can we meet tomorrow?
+Hannah : Let�s catch up later!
+Frank : Did you complete the assignment?
+Bob : That project was quite interesting.
+Eve : That project was quite interesting.
+Charlie : That project was quite interesting.
+Eve : This is so confusing!
+Eve : I need help with my code.
+Frank : Python is such a cool language.
+Frank : Let�s catch up later!
+Hannah : I'm almost done with my task.
+Bob : What's the plan for tonight?
+Charlie : I need help with my code.
+Eve : Let�s catch up later!
+Hannah : I'm almost done with my task.
+Frank : Python is such a cool language.
+Bob : I need help with my code.
+Alice : Can we meet tomorrow?
+Frank : I'm going to the library.
+Alice : That project was quite interesting.
+Deepali : What's the plan for tonight?
+Frank : This is so confusing!
+Eve : What's the plan for tonight?
+Hannah : Let�s catch up later!
+Frank : Let�s catch up later!
+Hannah : Did you complete the assignment?
+Eve : I'm almost done with my task.
+Grace : Let�s catch up later!
+Grace : I need help with my code.
+Charlie : That project was quite interesting.
+Alice : I need help with my code.
+Eve : I'm almost done with my task.
+Frank : Let's start the group discussion now.
+Deepali : This is so confusing!
+Hannah : I'm almost done with my task.
+Alice : Hey, how are you?
+Bob : I need help with my code.
+Eve : Let�s catch up later!
+Charlie : Hey, how are you?
+Alice : Python is such a cool language.
+Frank : Can we meet tomorrow?
+Grace : Python is such a cool language.
+Deepali : That project was quite interesting.
+Eve : Let�s catch up later!
+Alice : Can we meet tomorrow?
+Hannah : Hey, how are you?
+Alice : This is so confusing!
+Eve : Python is such a cool language.
+Grace : Did you complete the assignment?
+Hannah : I need help with my code.
+Alice : Let�s catch up later!
+Deepali : This is so confusing!
+Charlie : Can we meet tomorrow?
+Frank : Let�s catch up later!
+Eve : Python is such a cool language.
+Charlie : I need help with my code.
+Hannah : This is so confusing!
+Hannah : Python is such a cool language.
+Alice : I'm going to the library.
+Alice : Did you complete the assignment?
+Frank : I'm going to the library.
+Hannah : What's the plan for tonight?
+Grace : Let's start the group discussion now.
+Hannah : I'm going to the library.
+Bob : That project was quite interesting.
+Hannah : I'm going to the library.
+Hannah : I'm going to the library.
+Grace : That project was quite interesting.
+Bob : Hey, how are you?
+Eve : Hey, how are you?
+Alice : That project was quite interesting.
+Hannah : Let's start the group discussion now.
+Deepali : This is so confusing!
+Grace : This is so confusing!
+Alice : This is so confusing!
+Eve : Can we meet tomorrow?
+Alice : Let�s catch up later!
+Bob : Python is such a cool language.
+Grace : Can we meet tomorrow?
+Deepali : Python is such a cool language.
+Grace : What's the plan for tonight?
+Charlie : Did you complete the assignment?
+Charlie : I'm going to the library.
+Deepali : Hey, how are you?
+Grace : Hey, how are you?
+Deepali : That project was quite interesting.
+Hannah : I'm going to the library.
+Eve : What's the plan for tonight?
+Bob : I need help with my code.
+Deepali : Did you complete the assignment?
+Charlie : This is so confusing!
+Grace : Let's start the group discussion now.
+Bob : Let�s catch up later!
+Frank : Python is such a cool language.
+Frank : I need help with my code.
+Grace : This is so confusing!
+Hannah : What's the plan for tonight?
+Hannah : Did you complete the assignment?
+Eve : Let�s catch up later!
+Deepali : Let�s catch up later!
+Hannah : I'm almost done with my task.
+Alice : Let's start the group discussion now.
+Eve : Let's start the group discussion now.
+Deepali : Let's start the group discussion now.
+Frank : Did you complete the assignment?
+Alice : I need help with my code.
+Alice : Let�s catch up later!
+Grace : What's the plan for tonight?
+Charlie : Did you complete the assignment?
+Eve : That project was quite interesting.
+Hannah : What's the plan for tonight?
+Hannah : Did you complete the assignment?
+Frank : I'm going to the library.
+Frank : Let�s catch up later!
+Eve : I need help with my code.
+Frank : Can we meet tomorrow?
+Alice : I'm almost done with my task.
+Charlie : Hey, how are you?
+Charlie : Can we meet tomorrow?
+Grace : Let�s catch up later!
+Charlie : Hey, how are you?
+Hannah : Hey, how are you?
+Grace : Python is such a cool language.
+Bob : Let's start the group discussion now.
+Frank : Did you complete the assignment?
+Alice : Python is such a cool language.
+Hannah : I'm going to the library.
+Grace : That project was quite interesting.
+Grace : Let�s catch up later!
+Deepali : This is so confusing!
+Deepali : Hey, how are you?
+Grace : Can we meet tomorrow?
+Charlie : Can we meet tomorrow?
+Alice : This is so confusing!
+Bob : I'm going to the library.
+Alice : Did you complete the assignment?
+Bob : That project was quite interesting.
+Hannah : Let's start the group discussion now.
+Bob : Hey, how are you?
+Eve : I need help with my code.
+Eve : Let�s catch up later!
+Alice : Python is such a cool language.
+Eve : Python is such a cool language.
+Hannah : I'm almost done with my task.
+Alice : Python is such a cool language.
+Bob : I'm going to the library.
+Alice : Python is such a cool language.
+Charlie : What's the plan for tonight?
+Grace : Can we meet tomorrow?
+Bob : Can we meet tomorrow?
+Bob : I need help with my code.
+Grace : I need help with my code.
+Hannah : Python is such a cool language.
+Alice : Did you complete the assignment?
+Frank : I'm going to the library.
+Deepali : I'm almost done with my task.
+Frank : Let�s catch up later!
+Deepali : Let�s catch up later!
+Grace : I'm almost done with my task.
+Frank : I'm almost done with my task.
+Deepali : Hey, how are you?
+Charlie : I'm going to the library.
+Bob : Can we meet tomorrow?
+Bob : What's the plan for tonight?
+Charlie : That project was quite interesting.
+Deepali : Can we meet tomorrow?
+Charlie : I'm almost done with my task.
+Charlie : I'm going to the library.
+Alice : Let�s catch up later!
+Grace : Let's start the group discussion now.
+Hannah : Python is such a cool language.
+Hannah : This is so confusing!
+Frank : I'm going to the library.
+Charlie : That project was quite interesting.
+Frank : Let's start the group discussion now.
+Bob : I need help with my code.
+Charlie : I'm almost done with my task.
+Deepali : This is so confusing!
+Grace : Let�s catch up later!
+Frank : Can we meet tomorrow?
+Grace : What's the plan for tonight?
+Frank : What's the plan for tonight?
+Frank : What's the plan for tonight?
+Charlie : Can we meet tomorrow?
+Frank : That project was quite interesting.
+Charlie : What's the plan for tonight?
+Alice : Let�s catch up later!
+Charlie : Can we meet tomorrow?
+Hannah : Python is such a cool language.
+Alice : Hey, how are you?
+Bob : Python is such a cool language.
+Deepali : This is so confusing!
+Charlie : I'm almost done with my task.
+Frank : Python is such a cool language.
+Eve : Let's start the group discussion now.
+Deepali : I'm almost done with my task.
+Alice : Let�s catch up later!
+Bob : Let's start the group discussion now.
+Hannah : Python is such a cool language.
+Hannah : I need help with my code.
+Frank : I need help with my code.
+Hannah : Python is such a cool language.
+Eve : What's the plan for tonight?
+Bob : Can we meet tomorrow?
+Bob : Python is such a cool language.
+Hannah : What's the plan for tonight?
+Deepali : What's the plan for tonight?
+Deepali : Python is such a cool language.
+Frank : I need help with my code.
+Frank : Hey, how are you?
+Alice : Did you complete the assignment?
+Eve : I'm going to the library.
+Alice : I'm going to the library.
+Eve : That project was quite interesting.
+Deepali : What's the plan for tonight?
+Bob : Python is such a cool language.
+Hannah : Hey, how are you?
+Eve : Let's start the group discussion now.
+Charlie : I'm almost done with my task.
+Charlie : I need help with my code.
+Alice : Let's start the group discussion now.
+Hannah : Hey, how are you?
+Bob : I'm almost done with my task.
+Deepali : Let�s catch up later!
+Charlie : Python is such a cool language.
+Eve : What's the plan for tonight?
+Eve : Let's start the group discussion now.
+Deepali : What's the plan for tonight?
+Eve : This is so confusing!
+Bob : This is so confusing!
+Bob : Hey, how are you?
+Bob : Hey, how are you?
+Grace : That project was quite interesting.
+Hannah : Did you complete the assignment?
+Alice : Can we meet tomorrow?
+Deepali : Did you complete the assignment?
+Charlie : Did you complete the assignment?
+Bob : This is so confusing!
+Grace : Let's start the group discussion now.
+Hannah : Hey, how are you?
+Bob : I need help with my code.
+Grace : Python is such a cool language.
+Hannah : I need help with my code.
+Deepali : I need help with my code.
+Frank : I'm going to the library.
+Eve : I'm almost done with my task.
+Frank : Hey, how are you?
+Charlie : Python is such a cool language.
+Deepali : Let's start the group discussion now.
+Bob : This is so confusing!
+Bob : I'm almost done with my task.
+Hannah : Python is such a cool language.
+Alice : Hey, how are you?
+Hannah : I need help with my code.
+Charlie : Can we meet tomorrow?
+Frank : Can we meet tomorrow?
+Grace : What's the plan for tonight?
+Frank : Let's start the group discussion now.
+Bob : I'm going to the library.
+Alice : What's the plan for tonight?
+Bob : Python is such a cool language.
+Eve : Did you complete the assignment?
+Deepali : I need help with my code.
+Frank : Hey, how are you?
+Alice : I need help with my code.
+Eve : Let�s catch up later!
+Deepali : Can we meet tomorrow?
+Eve : Can we meet tomorrow?
+Eve : What's the plan for tonight?
+Deepali : I'm going to the library.
+Deepali : Let's start the group discussion now.
+Alice : Did you complete the assignment?
+Eve : Python is such a cool language.
+Alice : Let�s catch up later!
+Deepali : Did you complete the assignment?
+Frank : What's the plan for tonight?
+Grace : Let�s catch up later!
+Grace : Let's start the group discussion now.
+Bob : Hey, how are you?
+Grace : This is so confusing!
+Alice : Let's start the group discussion now.
+Alice : Hey, how are you?
+Grace : Python is such a cool language.
+Eve : Did you complete the assignment?
+Grace : I'm almost done with my task.
+Eve : Let�s catch up later!
+Bob : Let�s catch up later!
+Deepali : What's the plan for tonight?
+Eve : Python is such a cool language.
+Hannah : I need help with my code.
+Hannah : Let�s catch up later!
+Hannah : This is so confusing!
+Eve : I need help with my code.
+Alice : Let's start the group discussion now.
+Alice : This is so confusing!
+Eve : That project was quite interesting.
+Grace : I need help with my code.
+Alice : What's the plan for tonight?
+Alice : That project was quite interesting.
+Alice : Can we meet tomorrow?
+Grace : Let�s catch up later!
+Charlie : Python is such a cool language.
+Charlie : This is so confusing!
+Frank : Let�s catch up later!
+Deepali : Python is such a cool language.
+Frank : Python is such a cool language.
+Deepali : I need help with my code.
+Alice : Can we meet tomorrow?
+Hannah : Can we meet tomorrow?
+Grace : Can we meet tomorrow?
+Frank : This is so confusing!
+Deepali : Can we meet tomorrow?
+Deepali : I'm going to the library.
+Charlie : I need help with my code.
+Deepali : Let�s catch up later!
+Frank : What's the plan for tonight?
+Alice : I need help with my code.
+Hannah : Python is such a cool language.
+Charlie : Did you complete the assignment?
+Deepali : Can we meet tomorrow?
+Bob : This is so confusing!
+Charlie : Let's start the group discussion now.
+Bob : I need help with my code.
+Deepali : Python is such a cool language.
+Alice : What's the plan for tonight?
+Hannah : This is so confusing!
+Charlie : Did you complete the assignment?
+Alice : This is so confusing!
+Alice : That project was quite interesting.
+Charlie : I'm almost done with my task.
+Deepali : I'm going to the library.
+Charlie : Hey, how are you?
+Alice : Python is such a cool language.
+Deepali : I'm going to the library.
+Alice : I need help with my code.
+Grace : Hey, how are you?
+Frank : This is so confusing!
+Frank : Let�s catch up later!
+Charlie : Let�s catch up later!
+Eve : I'm going to the library.
+Bob : What's the plan for tonight?
+Alice : Let�s catch up later!
+Hannah : I'm going to the library.
+Eve : I'm almost done with my task.
+Deepali : I'm almost done with my task.
+Frank : This is so confusing!
+Hannah : Hey, how are you?
+Grace : Did you complete the assignment?
+Grace : Can we meet tomorrow?
+Hannah : I'm almost done with my task.
+Charlie : I need help with my code.
+Deepali : What's the plan for tonight?
+Bob : I need help with my code.
+Hannah : Let's start the group discussion now.
+Alice : Let's start the group discussion now.
+Frank : Let's start the group discussion now.
+Eve : I'm almost done with my task.
+Deepali : I'm almost done with my task.
+Eve : Let's start the group discussion now.
+Bob : Let's start the group discussion now.
+Hannah : This is so confusing!
+Alice : What's the plan for tonight?
+Bob : Can we meet tomorrow?
+Eve : Did you complete the assignment?
+Hannah : I need help with my code.
+Charlie : Hey, how are you?
+Bob : Hey, how are you?
+Frank : Let�s catch up later!
+Frank : That project was quite interesting.
+Alice : This is so confusing!
+Bob : Hey, how are you?
+Deepali : What's the plan for tonight?
+Grace : Let�s catch up later!
+Deepali : What's the plan for tonight?
+Eve : I'm going to the library.
+Grace : Can we meet tomorrow?
+Charlie : Python is such a cool language.
+Eve : Let�s catch up later!
+Eve : Did you complete the assignment?
+Frank : Can we meet tomorrow?
+Hannah : I need help with my code.
+Frank : I'm almost done with my task.
+Grace : I'm almost done with my task.
+Deepali : Let�s catch up later!
+Deepali : That project was quite interesting.
+Bob : Can we meet tomorrow?
+Grace : Let�s catch up later!
+Alice : I'm going to the library.
+Bob : This is so confusing!
+Alice : I'm going to the library.
+Bob : Let's start the group discussion now.
+Grace : I need help with my code.
+Charlie : Hey, how are you?
+Grace : This is so confusing!
+Grace : That project was quite interesting.
+Frank : What's the plan for tonight?
+Deepali : I'm going to the library.
+Bob : I'm going to the library.
+Alice : This is so confusing!
+Deepali : This is so confusing!
+Charlie : I'm almost done with my task.
+Deepali : I need help with my code.
+Charlie : Let�s catch up later!
+Eve : This is so confusing!
+Charlie : Let�s catch up later!
+Bob : I'm going to the library.
+Bob : I need help with my code.
+Deep : I need help with my code, Deepali.
+Char : Let�s catch up later!
+Tyer : you are cool.
